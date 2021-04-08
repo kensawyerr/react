@@ -1,3 +1,4 @@
+import React from "react";
 import Items from "../components/Items";
 import coffeeImage from "../images/coffee.jpg";
 import teaImage from "../images/tea.jpg";
@@ -16,42 +17,10 @@ import potatoImage from "../images/potatoes.jpg";
 import soapImage from "../images/soap.jpg";
 import pasteImage from "../images/paste.jpg";
 
-function Home() {
+export default function Beverage() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <Items name="Coffee" image={coffeeImage} brand="Coffee" quantity="10" />
-
-        <Items name="Tea" image={teaImage} brand="My Tea" quantity="13" />
-
-        <Items name="Cereal" image={cerealImage} brand="Cereal" quantity="14" />
-
-        <Items name="Milo" image={hotchocImage} brand="Milo" quantity="1" />
-        <Items name="Honey" image={honeyImage} brand="No Name" quantity="1" />
-
-        <Items
-          name="Cereal"
-          image={cerealImage}
-          brand="Kelloggs"
-          quantity="1"
-        />
-
-        <Items name="Rice" image={riceImage} brand="No name" quantity="1" />
-
-        <Items
-          name="Cous Cous"
-          image={couscousImage}
-          brand="Zinda"
-          quantity="1"
-        />
-
-        <Items
-          name="Salmon"
-          image={salmonImage}
-          brand="PC Organics"
-          quantity="1"
-        />
-
         <Items name="Beef" image={beefImage} brand="PC Organics" quantity="1" />
 
         <Items
@@ -96,5 +65,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

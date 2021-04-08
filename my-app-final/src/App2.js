@@ -1,21 +1,18 @@
-import {Route, BrowserRouter as Router} from "react-router-dom"
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/Home";
-import beverage from "./pages/beverage"
+import beverage from "./pages/Beverage";
 
-import React from 'react'
+import React from "react";
 
 export default function App2() {
-    return (
-        <div>
-         
-            <Router>
-            <switch>
-                
-                <Route path="/beverage" component={beverage}/>
-                <Route path="/" exact component={Home}/>
-                </switch>
-            </Router>
-            
-        </div>
-    )
+  return (
+    <div>
+      <Router>
+        <switch>
+          <Route path="/beverage" component={beverage} />
+          <Route path="/" exact component={Home} />
+        </switch>
+      </Router>
+    </div>
+  );
 }
